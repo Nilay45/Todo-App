@@ -1,0 +1,104 @@
+/* Import other CSS files (must come before other styles) */
+@import url("features.css");
+@import url("header.css");
+@import url("login.css");
+@import url("mediaquery.css");
+
+/* Global styles */
+* {
+  margin: 0%;
+  padding: 0%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Anchor tag styles */
+a {
+  text-decoration: none;
+  color: rgb(51, 51, 51);
+}
+
+/* Home section */
+.home {
+  text-align: center;
+}
+
+.home .heading {
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  padding-top: 10vmax;
+}
+
+.home p {
+  margin: 2rem 0;
+  font-weight: 900;
+}
+
+/* Todos container */
+.todosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+  height: 100%;
+  max-width: 900px;
+  margin: 3rem 0;
+}
+
+/* Todo styles */
+.todo {
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem;
+}
+
+.todo > div:last-of-type {
+  display: flex;
+  flex-direction: row;
+}
+
+.todo input {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* Loader styles */
+.loader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  font-weight: 100;
+  text-transform: uppercase;
+  overflow-x: hidden;
+  width: 100vw;
+}
+
+/* Button styles */
+.btn {
+  /* Add styles for styledText and myButton mixins here */
+  width: 10rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color3);
+  border: 1px solid var(--color3);
+  color: var(--color2);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+/* Container styles */
+.container {
+  padding: 5rem 2rem;
+  background-color: #e7e7e7;
+  /* Add styles for defaultStyle mixin here */
+}

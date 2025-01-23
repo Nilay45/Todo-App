@@ -1,0 +1,126 @@
+/* Color and text styles */
+:root {
+    --color2: rgb(255, 255, 255);
+    --color3: rgb(51, 51, 51);
+    --color4: #e7e7e7;
+    --text1: "Quicksand", sans-serif;
+    --shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  /* Default styles */
+  .defaultStyle {
+    width: 100%;
+    height: 100vh;
+    overflow-y: auto;
+    background-color: var(--color4);
+  }
+  
+  /* Styled Text */
+  .styledText {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 400;
+    letter-spacing: 2px;
+    color: var(--color3);
+  }
+  
+  .styledText-large {
+    font-size: 2rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: var(--color3);
+    letter-spacing: 2px;
+  }
+  
+  /* Flexbox */
+  .flexBox {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  .flexBox-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 1rem;
+  }
+  
+  /* Fill */
+  .fill {
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Container */
+  .container {
+    margin: auto;
+    max-width: 1200px;
+    width: 100%;
+    height: 100vh;
+    padding: 5vmax;
+  }
+  
+  .container-small {
+    margin: auto;
+    max-width: 900px;
+    width: 100%;
+    height: 100vh;
+    padding: 3rem 0;
+  }
+  
+  /* Button */
+  .myButton {
+    width: 10rem;
+    padding: 0.5rem 1.5rem;
+    background-color: var(--color3);
+    border: 1px solid var(--color3);
+    color: var(--color2);
+    text-transform: uppercase;
+    transition: all 0.3s;
+    cursor: pointer;
+  }
+  
+  .myButton:hover {
+    background-color: var(--color2);
+    color: var(--color3);
+  }
+  
+  .myButton:disabled {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+  
+  /* Hide scrollbar */
+  .hidescrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  
+  /* Grid layout */
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    justify-items: flex-start;
+  }
+  
+  .grid-center {
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  
+  /* Inputs */
+  .inputs input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid var(--color4);
+    font: 400 1rem var(--text1);
+    background-color: var(--color2);
+    outline: none;
+  }
+  

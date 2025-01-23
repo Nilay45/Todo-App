@@ -1,0 +1,47 @@
+/* Header styles */
+.header {
+  background-color: var(--color3);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 3rem;
+  width: 100%;
+}
+
+.header > div h2 {
+  text-transform: uppercase;
+  color: var(--color2);
+  font-weight: 400;
+}
+
+.header > article {
+  display: flex;
+  align-items: center;
+  text-align: center;
+}
+
+.header > article > a {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: var(--color3);
+  width: 10rem;
+  padding: 0.5rem 1.5rem;
+  background-color: var(--color3);
+  border: 1px solid var(--color3);
+  color: var(--color2);
+  text-transform: uppercase;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.header > article > a:hover {
+  background-color: var(--color2);
+  color: var(--color3);
+}
+
+.header > article > a:disabled {
+  opacity: 0.2;
+  cursor: not-allowed;
+}
