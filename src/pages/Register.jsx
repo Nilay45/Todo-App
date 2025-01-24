@@ -32,13 +32,23 @@ const Register = () => {
 
       toast.success(data.message);
       setIsAuthenticated(true);
-      setLoading(false);
     } catch (error) {
-      toast.error(error.response.data.message);
+      if (error.response) {
+        // Backend error with response
+        toast.error(error.response.data.message);
+      } else if (error.request) {
+        // No response received from server
+        toast.error("No response from server. Please try again later.");
+      } else {
+        // Other errors
+        toast.error("Something went wrong. Please try again.");
+      }
       setIsAuthenticated(false);
+    } finally {
       setLoading(false);
     }
   };
+
 
   if (isAuthenticated) return <Navigate to={"/"} />;
 
