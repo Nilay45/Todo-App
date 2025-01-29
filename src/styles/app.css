@@ -43,10 +43,14 @@ a {
   align-items: center;
   justify-content: flex-start;
   width: 100%;
-  height: 100%;
-  max-width: 900px;
-  margin: 3rem 0;
+  max-width: 600px; /* Set a max-width to make it look better */
+  margin: 3rem auto; /* Center horizontally */
+  padding: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Add a subtle shadow */
 }
+
 
 /* Todo styles */
 .todo {
@@ -58,17 +62,39 @@ a {
   justify-content: space-between;
   width: 100%;
   padding: 2rem;
+  margin-bottom: 1rem; /* Add spacing between each task */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
+
 
 .todo > div:last-of-type {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  gap: 1rem; /* Add some spacing between checkbox and button */
 }
 
+
 .todo input {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
 }
+
+.todo button {
+  padding: 0.5rem 1rem;
+  background-color: var(--color3);
+  color: var(--color2);
+  border: none;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.todo button:hover {
+  background-color: var(--color2);
+  color: var(--color3);
+  border: 1px solid var(--color3);
+}
+
 
 /* Loader styles */
 .loader {
